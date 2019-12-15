@@ -51,6 +51,7 @@ void Server::work(){
 		if(0 == (childpid = fork())) { 	//child process do
 			closeListenSocket();	//child process close listen
 			response();	//reponse client
+			exit(0);	//解决客户端关闭 服务端报错问题
 		}
 		//parent process do
 		closeConnectedSocket();
