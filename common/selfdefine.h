@@ -1,0 +1,7 @@
+#ifndef SELFDEFINE_H
+#define SELFDEFINE_H
+
+#define LISTEN_QUEUE_MAX_LENGTH  	1024
+#define SERVER_LISTEN_PORT	9000
+
+#endif
